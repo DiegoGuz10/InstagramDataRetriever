@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class InstagrammersCSVReader {
-//Reads a CSV-formatted file of top Instagrammers data, and returns a list
+public class InstagramCSVReader {
+// Reads a CSV-formatted file of top Instagrammers data, and returns a list
 	
 	public static List<Instagrammer> readFile(String filename) {
 		List<Instagrammer> IGers = new ArrayList<>();
@@ -51,7 +51,7 @@ public class InstagrammersCSVReader {
 		}
 		
 		public static void main(String[] args) {
-			List<Instagrammer> IGers = InstagrammersCSVReader.readFile("res/top_instagrammers.csv");
+			List<Instagrammer> IGers = InstagramCSVReader.readFile("res/top_instagrammers.csv");
 			
 		}
 	}
